@@ -1,0 +1,196 @@
+.box {
+  width: 200px;
+  height: 200px;
+  background-color: red;
+  -webkit-animation-name: anim-color;
+  -moz-animation-name: anim-color;
+  -o-animation-name: anim-color;
+  animation-name: anim-color;
+  -webkit-animation-duration: 2s;
+  -moz-animation-duration: 2s;
+  -o-animation-duration: 2s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -moz-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -o-animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  animation-timing-function: cubic-bezier(.42,0,.21,1.02);
+  -webkit-animation-delay: 3s;
+  -moz-animation-delay: 3s;
+  -o-animation-delay: 3s;
+  animation-delay: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: reverse;
+  -moz-animation-direction: reverse;
+  -o-animation-direction: reverse;
+  animation-direction: reverse;
+  -webkit-animation: anim-color 2s easy 1s infinity reverse;
+  -moz-animation: anim-color 2s easy 1s infinity reverse;
+  -o-animation: anim-color 2s easy 1s infinity reverse;
+  animation: anim-color 2s easy 1s infinity reverse;
+  -webkit-animation-fill-mode: forwards;
+  -moz-animation-fill-mode: forwards;
+  -o-animation-fill-mode: forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes anim-color {
+  0% {
+    background-color: gray;
+    margin-left: 0;
+  }
+
+  to {
+    background-color: purple;
+    margin-left: 400px;
+  }
+}
+* {
+  margin: 0;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  background: url("../img/fon-page.jpg") no-repeat center center;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: 100vh;
+}
+
+.form-main {
+  text-align: center;
+  margin: auto;
+  display: flex;
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.form-main .form-row {
+  margin-top: 8.5rem;
+}
+
+.form-main .form-row .form-box {
+  display: flex;
+  -webkit-justify-content: flex-start;
+  justify-content: flex-start;
+  -webkit-align-items: center;
+  align-items: center;
+  background-color: #fff;
+  margin-bottom: 10rem;
+}
+
+.form-main .form-row .form-box img {
+  margin-top: 9rem;
+  margin-left: 5rem;
+}
+
+.form-main .form-row .ac-box {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.form-main .form-row .ac-box .btn,
+.form-main .form-row .ac-box h1 {
+  font-size: 2.4rem;
+  font-family: "Open Sans";
+  font-weight: 700;
+}
+
+.form-main .form-row .ac-box p {
+  margin-bottom: 3rem;
+  ont-size: 16px;
+  font-family: "Ubuntu";
+  color: #000;
+}
+
+.form-main .form-row .ac-box i {
+  float: left;
+  position: absolute;
+  left: 0;
+  margin-top: .8rem;
+}
+
+.form-main .form-row .ac-box input {
+  margin-bottom: 3rem;
+  width: 38rem;
+  border: 0;
+  border-bottom: 1px solid;
+}
+
+.form-main .form-row .ac-box .btn {
+  width: 18rem;
+  height: 5rem;
+  background-color: #82c5c3;
+  color: #fff;
+  font-size: 1.6rem;
+  -webkit-border-radius: 25px;
+  border-radius: 25px;
+}
+
+.form-main .form-row .ac-box .btn:focus {
+  outline: 0;
+}
+
+.form-main .form-row .ac-box .footer {
+  margin-top: 2rem;
+}
+
+.form-main .form-row .ac-box .footer p,
+.form-main .form-row .ac-box .footer span {
+  display: inline-block;
+}
+
+.form-main .form-row .ac-box .footer span {
+  font-size: 14px;
+  font-family: "Ubuntu";
+}
+
+.form-main .form-row .ac-box .footer p {
+  font-size: 14px;
+  font-family: "Ubuntu";
+  color: #f69a7a;
+}
+
+.error {
+  border: 1px solid red;
+}
+
+label.error {
+  border: 0;
+  color: red;
+}
+
+@media (max-width:570px) {
+  html {
+    font-size: 7px;
+  }
+
+  body {
+    min-width: 525px;
+  }
+
+  .form-box img {
+    width: 70%;
+  }
+
+  .ac-box h1 {
+    text-align: left;
+    font-size: 2.4rem;
+    font-family: "Open Sans";
+    font-weight: 700;
+  }
+
+  .ac-box p {
+    margin-bottom: 3rem;
+    text-align: left;
+    font-size: 2.2rem;
+    font-family: "Ubuntu";
+    color: #000;
+  }
+}
